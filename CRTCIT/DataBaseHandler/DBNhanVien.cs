@@ -101,7 +101,7 @@ namespace CRTCIT.DataBaseHandler
             DataBaseManager dbmg = DataBaseManager.getInstance();
             SqlConnection con = dbmg.openDatabase();
 
-            string sql = "SELECT * FROM NhanVien where id = '12'";
+            string sql = "SELECT * FROM NhanVien";
             SqlDataAdapter dataadapter = new SqlDataAdapter(sql, con);
             DataSet ds = new DataSet();
             dataadapter.Fill(ds, "NhanVien");

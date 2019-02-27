@@ -236,6 +236,36 @@
           </Border>
         </Style>
       </Tablix>
+      <Textbox Name="Textbox3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>= Now()</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>1.19889cm</Top>
+        <Left>10.39495cm</Left>
+        <Height>0.6cm</Height>
+        <Width>2.5cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
     <Height>6.90625in</Height>
     <Style />
@@ -243,7 +273,7 @@
   <Width>7.31609in</Width>
   <Page>
     <PageHeader>
-      <Height>2.54cm</Height>
+      <Height>2.66085cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -262,10 +292,55 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
-          <Top>1.31974cm</Top>
-          <Left>8.78099cm</Left>
+          <Top>2.06085cm</Top>
+          <Left>0.49953cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Image Name="Image1">
+          <Source>Embedded</Source>
+          <Value>nhanien</Value>
+          <Sizing>FitProportional</Sizing>
+          <Top>0.52557cm</Top>
+          <Left>1.10807cm</Left>
+          <Height>1.5cm</Height>
+          <Width>1.5cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
+        <Textbox Name="Textbox2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>BAO CAO TUAN</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox2</rd:DefaultName>
+          <Top>1.42557cm</Top>
+          <Left>6.63787cm</Left>
+          <Height>0.6cm</Height>
+          <Width>3.92875cm</Width>
+          <ZIndex>2</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -328,6 +403,14 @@
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="nhanien">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>076700fd-b3b5-462d-a4d1-c6d8bcc46c65</rd:ReportID>
 </Report>
