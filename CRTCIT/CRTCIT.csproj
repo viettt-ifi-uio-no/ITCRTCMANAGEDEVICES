@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28B96BFF-FE46-43C6-A18E-B23A0F5C412B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CRTCIT</RootNamespace>
+    <AssemblyName>CRTCIT</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllObjects\BaoTri.cs" />
+    <Compile Include="AllObjects\Ca.cs" />
+    <Compile Include="AllObjects\XuLySuCo.cs" />
+    <Compile Include="AllObjects\QuyTrinhXLSC.cs" />
+    <Compile Include="AllObjects\DeXuat.cs" />
+    <Compile Include="AllObjects\DeXuatXuLy.cs" />
+    <Compile Include="AllObjects\LichCa.cs" />
+    <Compile Include="AllObjects\NhanVien.cs" />
+    <Compile Include="AllObjects\NhomThietBi.cs" />
+    <Compile Include="AllObjects\QuyTrinhBT.cs" />
+    <Compile Include="AllObjects\SuKien.cs" />
+    <Compile Include="AllObjects\ThietBi.cs" />
+    <Compile Include="AllObjects\XuLyCongViec.cs" />
+    <Compile Include="baotri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baotri.Designer.cs">
+      <DependentUpon>baotri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBaseHandler\DBNhomThietBi.cs" />
+    <Compile Include="DataBaseHandler\DBQuyTrinhBT.cs" />
+    <Compile Include="DataBaseHandler\DBQuyTrinhXLSC.cs" />
+    <Compile Include="DataBaseHandler\DBThietBi.cs" />
+    <Compile Include="DeXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeXuat.Designer.cs">
+      <DependentUpon>DeXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBaoTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBaoTri.Designer.cs">
+      <DependentUpon>FBaoTri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBaseHandler\DataBaseManager.cs" />
+    <Compile Include="DataBaseHandler\DBCa.cs" />
+    <Compile Include="DataBaseHandler\DBDeXuat.cs" />
+    <Compile Include="DataBaseHandler\DBDeXuatXuLy.cs" />
+    <Compile Include="DataBaseHandler\DBLichCa.cs" />
+    <Compile Include="DataBaseHandler\DBNhanVien.cs" />
+    <Compile Include="DataBaseHandler\DBSuKien.cs" />
+    <Compile Include="DataBaseHandler\DBXuLyCongViec.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReport\frmReportBaoTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport\frmReportBaoTri.Designer.cs">
+      <DependentUpon>frmReportBaoTri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="itcrtcDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itcrtcDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FNhanVien.Designer.cs">
+      <DependentUpon>FNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FNhomThietBi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FNhomThietBi.Designer.cs">
+      <DependentUpon>FNhomThietBi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FQuyTrinhBaoTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQuyTrinhBaoTri.Designer.cs">
+      <DependentUpon>FQuyTrinhBaoTri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQuyTrinhXuLySuCo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQuyTrinhXuLySuCo.Designer.cs">
+      <DependentUpon>FQuyTrinhXuLySuCo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FThietBi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FThietBi.Designer.cs">
+      <DependentUpon>FThietBi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FXuLySuCo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FXuLySuCo.Designer.cs">
+      <DependentUpon>FXuLySuCo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="baotri.resx">
+      <DependentUpon>baotri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeXuat.resx">
+      <DependentUpon>DeXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBaoTri.resx">
+      <DependentUpon>FBaoTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport\frmReportBaoTri.resx">
+      <DependentUpon>frmReportBaoTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport\rptTest.rdlc" />
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FNhanVien.resx">
+      <DependentUpon>FNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FNhomThietBi.resx">
+      <DependentUpon>FNhomThietBi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FQuyTrinhBaoTri.resx">
+      <DependentUpon>FQuyTrinhBaoTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQuyTrinhXuLySuCo.resx">
+      <DependentUpon>FQuyTrinhXuLySuCo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FThietBi.resx">
+      <DependentUpon>FThietBi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FXuLySuCo.resx">
+      <DependentUpon>FXuLySuCo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="itcrtcDataSet.xsc">
+      <DependentUpon>itcrtcDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="itcrtcDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itcrtcDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itcrtcDataSet.xss">
+      <DependentUpon>itcrtcDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="itcrtc.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="itcrtc_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>itcrtc.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
