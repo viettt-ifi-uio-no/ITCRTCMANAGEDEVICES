@@ -81,7 +81,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.67265F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.32735F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 121F));
             this.tableLayoutPanel2.Controls.Add(this.txtHe, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.txtTenNhom, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.txtMaNhom, 1, 0);
@@ -201,7 +201,7 @@
             this.btnDelNhom.Location = new System.Drawing.Point(111, 83);
             this.btnDelNhom.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelNhom.Name = "btnDelNhom";
-            this.btnDelNhom.Size = new System.Drawing.Size(103, 72);
+            this.btnDelNhom.Size = new System.Drawing.Size(102, 72);
             this.btnDelNhom.TabIndex = 2;
             this.btnDelNhom.Text = "Xóa Nhóm";
             this.btnDelNhom.UseVisualStyleBackColor = false;
@@ -214,10 +214,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditNhom.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnEditNhom.Enabled = false;
-            this.btnEditNhom.Location = new System.Drawing.Point(218, 83);
+            this.btnEditNhom.Location = new System.Drawing.Point(217, 83);
             this.btnEditNhom.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditNhom.Name = "btnEditNhom";
-            this.btnEditNhom.Size = new System.Drawing.Size(117, 72);
+            this.btnEditNhom.Size = new System.Drawing.Size(118, 72);
             this.btnEditNhom.TabIndex = 6;
             this.btnEditNhom.Text = "Sửa";
             this.btnEditNhom.UseVisualStyleBackColor = false;

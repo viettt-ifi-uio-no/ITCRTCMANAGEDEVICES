@@ -33,7 +33,6 @@
             this.btnLoadTBHanBaoTri = new System.Windows.Forms.Button();
             this.btnInDanhSach = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.lstThietBiDenHanBT = new System.Windows.Forms.ListView();
             this.txtNoiDungBaoTri = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblViTri = new System.Windows.Forms.Label();
@@ -48,8 +47,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cbNhanVien = new System.Windows.Forms.ComboBox();
             this.cbQuyTrinh = new System.Windows.Forms.ComboBox();
+            this.dataGridTBBT = new System.Windows.Forms.DataGridView();
             this.tblBaoTri.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridTBBT)).BeginInit();
             this.SuspendLayout();
             // 
             // tblBaoTri
@@ -64,13 +65,13 @@
             this.tblBaoTri.Controls.Add(this.btnLoadTBHanBaoTri, 0, 0);
             this.tblBaoTri.Controls.Add(this.btnInDanhSach, 1, 0);
             this.tblBaoTri.Controls.Add(this.label1, 3, 0);
-            this.tblBaoTri.Controls.Add(this.lstThietBiDenHanBT, 0, 1);
             this.tblBaoTri.Controls.Add(this.txtNoiDungBaoTri, 3, 1);
             this.tblBaoTri.Controls.Add(this.tableLayoutPanel1, 3, 4);
             this.tblBaoTri.Controls.Add(this.label2, 3, 2);
             this.tblBaoTri.Controls.Add(this.label3, 3, 3);
             this.tblBaoTri.Controls.Add(this.cbNhanVien, 4, 2);
             this.tblBaoTri.Controls.Add(this.cbQuyTrinh, 4, 3);
+            this.tblBaoTri.Controls.Add(this.dataGridTBBT, 0, 1);
             this.tblBaoTri.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tblBaoTri.Location = new System.Drawing.Point(0, 0);
             this.tblBaoTri.Name = "tblBaoTri";
@@ -80,6 +81,8 @@
             this.tblBaoTri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tblBaoTri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tblBaoTri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tblBaoTri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tblBaoTri.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tblBaoTri.Size = new System.Drawing.Size(1463, 749);
             this.tblBaoTri.TabIndex = 0;
             // 
@@ -134,17 +137,6 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Cập Nhật Tình Trạng Nội Dung Bảo Trì";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lstThietBiDenHanBT
-            // 
-            this.tblBaoTri.SetColumnSpan(this.lstThietBiDenHanBT, 3);
-            this.lstThietBiDenHanBT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lstThietBiDenHanBT.Location = new System.Drawing.Point(3, 77);
-            this.lstThietBiDenHanBT.Name = "lstThietBiDenHanBT";
-            this.tblBaoTri.SetRowSpan(this.lstThietBiDenHanBT, 4);
-            this.lstThietBiDenHanBT.Size = new System.Drawing.Size(841, 669);
-            this.lstThietBiDenHanBT.TabIndex = 6;
-            this.lstThietBiDenHanBT.UseCompatibleStateImageBehavior = false;
             // 
             // txtNoiDungBaoTri
             // 
@@ -327,6 +319,17 @@
             this.cbQuyTrinh.Size = new System.Drawing.Size(435, 21);
             this.cbQuyTrinh.TabIndex = 14;
             // 
+            // dataGridTBBT
+            // 
+            this.dataGridTBBT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tblBaoTri.SetColumnSpan(this.dataGridTBBT, 3);
+            this.dataGridTBBT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridTBBT.Location = new System.Drawing.Point(3, 77);
+            this.dataGridTBBT.Name = "dataGridTBBT";
+            this.tblBaoTri.SetRowSpan(this.dataGridTBBT, 4);
+            this.dataGridTBBT.Size = new System.Drawing.Size(841, 669);
+            this.dataGridTBBT.TabIndex = 15;
+            // 
             // FBaoTri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,6 +343,7 @@
             this.tblBaoTri.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridTBBT)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -351,7 +355,6 @@
         private System.Windows.Forms.Button btnLoadTBHanBaoTri;
         private System.Windows.Forms.Button btnInDanhSach;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView lstThietBiDenHanBT;
         private System.Windows.Forms.TextBox txtNoiDungBaoTri;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label lblTTB;
@@ -366,5 +369,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbNhanVien;
         private System.Windows.Forms.ComboBox cbQuyTrinh;
+        private System.Windows.Forms.DataGridView dataGridTBBT;
     }
 }

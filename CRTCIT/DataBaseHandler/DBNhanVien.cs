@@ -81,7 +81,6 @@ namespace CRTCIT.DataBaseHandler
 
         public void updateGridData(DataGridView dataGrid)
         {
-            
             DataBaseManager.initializeInstance();
             DataBaseManager dbmg = DataBaseManager.getInstance();
             SqlConnection con = dbmg.openDatabase();

@@ -84,10 +84,12 @@
     <Compile Include="baotri.Designer.cs">
       <DependentUpon>baotri.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataBaseHandler\DBBaoTri.cs" />
     <Compile Include="DataBaseHandler\DBNhomThietBi.cs" />
     <Compile Include="DataBaseHandler\DBQuyTrinhBT.cs" />
     <Compile Include="DataBaseHandler\DBQuyTrinhXLSC.cs" />
     <Compile Include="DataBaseHandler\DBThietBi.cs" />
+    <Compile Include="DataBaseHandler\DBXuLySuCo.cs" />
     <Compile Include="DeXuat.cs">
       <SubType>Form</SubType>
     </Compile>

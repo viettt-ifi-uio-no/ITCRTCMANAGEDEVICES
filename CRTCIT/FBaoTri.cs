@@ -43,7 +43,8 @@ namespace CRTCIT
 
         private void btnLoadTBHanBaoTri_Click(object sender, EventArgs e)
         {
-
+            DBBaoTri dbBaoTri = new DBBaoTri();
+            dbBaoTri.loadThietBiDenHanBaoTri(dataGridTBBT);
         }
     }
 }
